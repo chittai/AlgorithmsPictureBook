@@ -5,6 +5,7 @@
 
 # Original
 *.json
+*.csproj
 
 # User-specific files
 *.rsuser
