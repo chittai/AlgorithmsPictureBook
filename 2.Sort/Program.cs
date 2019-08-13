@@ -7,9 +7,16 @@ namespace _2.Sort
         static void Main(string[] args)
         {
 
+            // Input
             int[] array = new int[9] { 5, 9, 3, 1, 2, 8, 4, 7, 6 };
 
+            // BubbleSort
+            Console.WriteLine("--- bubble sort ---");
             BubbleSort.Sort(array);
+
+            // SelectionSort
+            Console.WriteLine("--- selection sort ---");
+            SelectionSort.Sort(array);
 
         }
     }
