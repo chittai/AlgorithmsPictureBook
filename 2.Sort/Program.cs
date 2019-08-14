@@ -22,6 +22,10 @@ namespace _2.Sort
             Console.WriteLine("--- insertion sort ---");
             SelectionSort.Sort(array);
 
+            // Heap Sort
+            Console.WriteLine("--- heap sort ---");
+            HeapSort.Sort(array);
+
         }
     }
 }
