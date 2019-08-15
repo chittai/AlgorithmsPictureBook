@@ -22,9 +22,15 @@ namespace _2.Sort
             Console.WriteLine("--- insertion sort ---");
             SelectionSort.Sort(array);
 
+            // Merge Sort
+            Console.WriteLine("--- merge sort ---");
+            MergeSort.Sort(array);
+
             // Heap Sort
             Console.WriteLine("--- heap sort ---");
             HeapSort.Sort(array);
+
+
 
         }
     }
