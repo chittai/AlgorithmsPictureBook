@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace _2.Sort
 {
@@ -7,31 +7,41 @@ namespace _2.Sort
         static void Main(string[] args)
         {
 
-            // Input
-            int[] array = new int[9] { 5, 9, 3, 1, 2, 8, 4, 7, 6 };
-
             // Bubble Sort
-            Console.WriteLine("--- bubble sort ---");
-            BubbleSort.Sort(array);
+            Console.WriteLine(string.Join(",", Initialize()));
+            BubbleSort.Sort(Initialize());
 
             // Selection Sort
             Console.WriteLine("--- selection sort ---");
-            SelectionSort.Sort(array);
+            Console.WriteLine(string.Join(",", Initialize()));
+            SelectionSort.Sort(Initialize());
 
             // Insertion Sort
             Console.WriteLine("--- insertion sort ---");
-            SelectionSort.Sort(array);
+            Console.WriteLine(string.Join(",", Initialize()));
+            SelectionSort.Sort(Initialize());
 
             // Merge Sort
             Console.WriteLine("--- merge sort ---");
-            MergeSort.Sort(array);
+            Console.WriteLine(string.Join(",", Initialize()));
+            MergeSort.Sort(Initialize());
+
+            // Quick Sort
+            Console.WriteLine("--- quick sort ---");
+            Console.WriteLine(string.Join(",", Initialize()));
+            QuickSort.Sort(Initialize());
 
             // Heap Sort
             Console.WriteLine("--- heap sort ---");
-            HeapSort.Sort(array);
-
-
-
+            Console.WriteLine(string.Join(",", Initialize()));
+            HeapSort.Sort(Initialize());
         }
+
+        static int[] Initialize()
+        {
+            int[] array = new int[9] { 5, 9, 3, 1, 2, 8, 4, 7, 6 };
+            return array;
+        }
+
     }
 }
