@@ -8,6 +8,7 @@ namespace _2.Sort
         {
 
             // Bubble Sort
+            Console.WriteLine("--- bubble sort ---");
             Console.WriteLine(string.Join(",", Initialize()));
             BubbleSort.Sort(Initialize());
 
@@ -19,7 +20,7 @@ namespace _2.Sort
             // Insertion Sort
             Console.WriteLine("--- insertion sort ---");
             Console.WriteLine(string.Join(",", Initialize()));
-            SelectionSort.Sort(Initialize());
+            InsertionSort.Sort(Initialize());
 
             // Merge Sort
             Console.WriteLine("--- merge sort ---");

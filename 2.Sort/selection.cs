@@ -9,13 +9,16 @@ namespace _2.Sort
             for (int i = 0; i < array.Length - 1; i++)
             {
                 int min = array[i];
+                int index = 0;
                 for (int j = i; j < array.Length; j++)
                 {
-                    if (array[j] < min)
+                    if (array[j] <= min)
                     {
                         min = array[j];
+                        index = j;
                     }
                 }
+                array[index] = array[i];
                 array[i] = min;
             }
 
