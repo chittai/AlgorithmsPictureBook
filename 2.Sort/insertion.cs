@@ -6,15 +6,17 @@ namespace _2.Sort
     {
         public static void Sort(int[] array)
         {
-            for (int i = 1; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                for (int j = i; j <= 0; j--)
+                int index = i;
+                for (int j = i - 1; 0 <= j; j--)
                 {
-                    if (array[i] < array[j])
+                    if (array[index] < array[j])
                     {
-                        int tmp = array[i];
-                        array[i] = array[j];
+                        int tmp = array[index];
+                        array[index] = array[j];
                         array[j] = tmp;
+                        index = j;
                     }
                     else { break; }
                 }
